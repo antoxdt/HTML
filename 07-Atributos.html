@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Atributos HTML</title>
+</head>
+<body>
+<h1>Atributos en HTML</h1>
+<p>Los atributos en HTML son propiedades que se añaden a la etiqueta para proporcionar informacion o controlar su comportamiento</p>
+<p>Los atributos siempre estan presentes dentro de la estructura de la etiqueta de apertura u se componen de un nombre y un valor.</p>
+
+<!--
+
+Syntaxis:
+
+<etiqueta atributo"valor"...</etiqueta> 
+
+-->
+
+<!--
+
+Atributo src 
+
+Especifica a la url de el recurso como imagen audio o video se usan en las etiquetas <img>, <audio>, <video>, <frame>
+  
+  Se debe definit la ubicacion del archivo que se va a mostrar o cargar.-->
+
+  <img src="Gato.jfif" alt=""/>
+  <video src="./video.mp4"></video>
+  <audio src="./Audio.mp3"></audio>
+  <iframe src="" frameborder="0"></iframe>
+
+  <!--
+  
+  2.alt=
+  
+  El atributo alt muestra un texto alternativo para cuando una imagen no se puede mostrar
+  
+  Esto es para volber acccesble las imagenes a los usuarios con discapacidad visual-->
+
+  <img src="./unaimagen.png" alt="Este es un mensaje que describe la imagen no cargada">
+
+  <!--
+  
+  3.target=
+  
+Define dondese abrira un enlace.
+
+_blank se abra una pestaña nueva
+_self se abre en la misma ventana (valor pot defecto)-->
+
+<a href="https://www.instagram.com/?hl=es" target="_blank">Entra a mi instagram</a>
+
+<!--
+
+4.rel
+
+Especfica la relación entre el documento actual y el documento enlazado
+
+-->
+
+<link rel="stylesheet" href="./style.ccs">
+
+<a href="https://www.google.com.mx/?hl=es-419" rel="nofollow"></a>
+
+<script> rel="javascript" src: 
+let mensaje = "Hola mundo"
+console.log(mensaje) 
+
+</script>
+
+<!--
+
+5. Style
+
+Funciona para definir CSS en linea directamente en lal etiqueta..
+
+Aplique estos estilos a un elemento directamente. No es recomentable usarlo much, lo recomendado son hajs de esilo
+-->
+<p style="color:white; font-size:56px"></p>
+
+<!--
+6.ID
+
+Defnir un edintificador unico para una etiqueta 
+
+Funciona para cualquier etiqueta y se utilizan para enlazar con una hoja de estilos o con javascript.
+
+El valor de id nosotros lo definimos-->
+
+<button id=""mi botoncito>Picale aquí</button>
+<script rel=""javascript>
+const boton = document.getElementById(Mi botoncito)
+
+boton.addEventListener("click", mensaje)
+
+function mensaje() {
+  alert("Ya casí terminmos")
+  } 
+
+  </script>
+</body>
+</html>
